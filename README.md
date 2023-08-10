@@ -1,5 +1,4 @@
 Project: Identifying Security Threats in PCAP Files
-Done as A group of 2
 
 This project is a collection of Python scripts and tools designed to analyze network traffic captured in PCAP files and detect potential security threats and anomalies. The tools are aimed at assisting in the identification of various types of security issues that may be present in network communications.
 
