@@ -167,7 +167,7 @@ def check_dns_tunnelling(content):
 
 
 # Open the PCAP file and read the content
-filename = "CyberSecurity2023.pcap"
+filename = input("Enter the name of the PCAP file: ")
 with open(filename, 'rb') as f:
     content = f.read()
 
