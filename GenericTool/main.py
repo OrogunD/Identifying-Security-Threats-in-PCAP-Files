@@ -124,8 +124,7 @@ def check_protocol_anomalies(content):
 
         # Check for protocol anomalies
         if tcp_header and udp_header:
-            anomalies.append(('TCP and UDP headers present',
-                              f'Packet length: {len(ethernet_header + ip_header + tcp_header + udp_header)}'))
+            anomalies.append(('TCP and UDP headers present', f'Packet length: {len(ethernet_header + ip_header + tcp_header + udp_header)}'))
         elif tcp_header and tcp_header[2] == 0:
             anomalies.append(
                 ('TCP header length is 0', f'Packet length: {len(ethernet_header + ip_header + tcp_header)}'))
